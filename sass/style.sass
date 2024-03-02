@@ -17,5 +17,51 @@
     
 .main-window
     border: 1px solid black
-    width: 50%
-    height: 50%
+    width: 500px 
+    height: 325px
+    border-radius: 20px
+    background-color: hsla(46, 96%, 53%, 1)
+    padding-top: 30px 
+    &__inputs
+        display: flex
+        flex-direction: column
+    &__hrefs
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+    &__log-in_button
+        display: flex
+        justify-content: center
+        margin-bottom: 20px
+    
+.input-box
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.input-text
+    margin-bottom: 10px
+    font-size: 22px
+
+.input-bar
+    width: 70%
+    margin-bottom: 30px
+    border-radius: 10px
+
+.button
+    width: 110px
+    height: 30px
+    border-radius: 20px
+    background-color: hsla(193, 96%, 47%, 1)
+    color: hsl(360, 0%, 92%)
+
+.href
+    text-decoration: none
+    font-size: 16px
+    font-weight: bold
+    color: hsl(288.9, 100%, 38.2%)
+
+.href:hover
+    color: hsl(288.9, 100%, 30%)
+.href:active
+    color: hsl(288.9, 100%, 40%)

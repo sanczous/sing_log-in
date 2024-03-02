@@ -11,20 +11,23 @@
     <h1>Hello</h1>
     <div class="main-window">
         <div class="main-window__inputs">
-
-            <p>Your email</p>
-            <input type="email">
-
-            <p>Your password</p>
-            <input type="password">
-
+            <div class="email-input input-box">
+                <p class="input-text">Your email</p>
+                <input class="input-bar" type="email" placeholder="Your@email.com">
+            </div>
+            <div class="password-input input-box">
+                <p class="input-text">Your password</p>
+                <input class="input-bar" type="password" placeholder="Your password">
+            </div>
         </div>
-        <button>Log in</button>
+        <div class="main-window__log-in_button">
+            <button class="button">Log in</button>
+        </div>
         <div class="main-window__hrefs">
-            <a href="#">
+            <a href="#" class="href">
                 <p>create account</p>
             </a>
-            <a href="#">
+            <a href="#" class="href">
                 <p>forgot password</p>
             </a>
         </div>
