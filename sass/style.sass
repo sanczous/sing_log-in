@@ -14,7 +14,11 @@
     justify-content: center
     align-items: center
     flex-direction: column
-    
+
+h1
+    font-size: 40px
+    font-weight: bold
+ 
 .main-window
     border: 1px solid black
     width: 500px 
@@ -32,7 +36,7 @@
     &__log-in_button
         display: flex
         justify-content: center
-        margin-bottom: 20px
+        margin-bottom: 25px
     
 .input-box
     display: flex
@@ -44,9 +48,19 @@
     font-size: 22px
 
 .input-bar
+    height: 25px
     width: 70%
     margin-bottom: 30px
     border-radius: 10px
+    border: none
+    background-color: hsl(60, 8%, 47.1%)
+    color: white 
+    &::placeholder
+        color: white 
+    &:hover
+        background-color: grey
+    &:active
+        border: none //???  
 
 .button
     width: 110px
@@ -54,6 +68,16 @@
     border-radius: 20px
     background-color: hsla(193, 96%, 47%, 1)
     color: hsl(360, 0%, 92%)
+    border: 5px  outset
+    border-color: hsl(265.5, 30.6%, 57.6%)
+    &:hover
+        transition: 1s
+        border: 5px solid
+        border-color: hsl(265.5, 30.6%, 35%)
+    &:active
+        transition: 0s
+        border: 5px inset
+        border-color: hsl(265.5, 30.6%, 70%) 
 
 .href
     text-decoration: none
